@@ -23,7 +23,13 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     withdrawalDate: {
+<<<<<<< HEAD
       type: DataTypes.STRING
+=======
+      //Change this to a date type; Adjust client-side user date selection.
+      type: DataTypes.INTEGER,
+      allowNull: false
+>>>>>>> origin
     }
   });
  
