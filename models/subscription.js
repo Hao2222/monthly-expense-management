@@ -21,8 +21,12 @@ module.exports = function(sequelize, DataTypes) {
     category: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    withdrawalDate: {
+      type: DataTypes.STRING
     }
   });
+ 
   // Subscription.associate = function(models) {
   //   models.Subscription.belongsTo(models.User);
   // };
