@@ -1,5 +1,5 @@
 const express = require("express");
-
+const db = require("../models");
 const router = express.Router();
 
 // Requiring our custom middleware for checking if a user is logged in
@@ -26,7 +26,11 @@ router.get("/login", (req, res) => {
 router.get("/members", isAuthenticated, (req, res) => {
   //res.sendFile(path.join(__dirname, "../public/members.html"));
   //res.render("members");
-  res.render("subscription");
+  db.Subscription.findAll({})
+  .then(result =>{
+    res.render("subscription");  
+  });
+  
 });
 
 module.exports = router;
