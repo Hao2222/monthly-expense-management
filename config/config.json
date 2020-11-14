@@ -1,13 +1,8 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "Brontoe13",
     "database": "passport_db",
-=======
-    "password": "FlyingMonkeys1!",
-    "database": "passport_demo",
->>>>>>> origin
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
