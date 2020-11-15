@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>Expense Trackr</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/img/money.png">
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="stylesheets/style.css" rel="stylesheet">
@@ -15,37 +16,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
       
-          <!--Navbar FEEL FREE TO CHANGE ANYTHING/ IDEA IS TO HAVE APP NAME AND LINKS/ROUTES TO OTHER PAGES -->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand"><h1>My Dashboard</h1></a>
-            <a class="active" href="#"><i class="fas fa-money-bill-wave"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-              <!-- Collapsible button -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ml-auto">
-      
-                <!-- a Dropdown menu -->
-                <li class="nav-item dropdown">
-      
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   <h4>Options</h4>
-                  </a>
-      
-                  <div class="dropdown-menu" aria-label ledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="">Subscriptions</a>
-                    <a class="dropdown-item" href="">Budget</a>
-                    <a class="dropdown-item" href="">??????</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-5">
+  <a class="navbar-brand" href="#">Expense Trackr</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Budget</a>
+          <a class="dropdown-item" href="#">Subscriptions</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>  
 <body>
     {{{ body }}}
 </body>
